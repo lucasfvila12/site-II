@@ -1,1 +1,294 @@
+index.html
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vila Games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregarCatalogo()">
+
+<header class="topo">
+  <h1>🎮 Vila Games</h1>
+  <p class="sub">Descubra e avalie seus jogos favoritos</p>
+  <input type="text" id="busca" placeholder="🔎 Buscar jogo..." onkeyup="buscar()">
+</header>
+
+<section class="destaque">
+  <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg">
+  <div class="info-destaque">
+    <h2>Elden Ring</h2>
+    <p>Um dos RPGs mais aclamados, com mundo aberto e desafios intensos.</p>
+  </div>
+</section>
+
+<h2 class="titulo">🎯 Catálogo</h2>
+<main class="catalogo" id="catalogo"></main>
+
+<footer class="rodape">
+  <p>© 2026 Vila Games</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+=================================================================================================
+brawlhalla.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Brawlhalla</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar('aval1')">
+
+<div class="pagina">
+<h1>Brawlhalla</h1>
+
+<p>Brawlhalla é um jogo de luta em plataforma gratuito (free-to-play) e cross-platform, estilo Super Smash Bros, onde o objetivo é nocautear os oponentes para fora da arena. Desenvolvido pela Blue Mammoth Games (Ubisoft), apresenta um elenco crescente de "Lendas", cada uma com armas únicas, estilos de jogo e crossovers populares.</p>
+
+<div class="galeria">
+<img src="https://cdn1.epicgames.com/offer/15e6680a0c164ee189fcc3eb10398fd6/CollectorsPack_2560x1440_2560x1440-e446ed368c5c92d30054a41dffcaaa61" onclick="abrirImagem(this.src)">
+<img src="https://gaming-cdn.com/images/products/9463/orig/brawlhalla-pc-mac-jogo-steam-cover.jpg?v=1702486385" onclick="abrirImagem(this.src)">
+<img src="https://store-images.s-microsoft.com/image/apps.39724.13891464908023063.a041e1c7-f56f-4ac1-ab92-18f9ca74105a.08fa5ea8-3157-4314-8e90-04ff3dce38ed?h=862&format=jpg" onclick="abrirImagem(this.src)">
+</div>
+
+<div id="aval1" class="avaliacao">
+<span onclick="avaliar('aval1',1)">★</span>
+<span onclick="avaliar('aval1',2)">★</span>
+<span onclick="avaliar('aval1',3)">★</span>
+<span onclick="avaliar('aval1',4)">★</span>
+<span onclick="avaliar('aval1',5)">★</span>
+</div>
+
+<a class="botao" href="index.html">Voltar</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="fecharImagem()">
+  <span class="fechar">&times;</span>
+  <img id="img-lightbox">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+=========================================================================================================
+ark.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ARK</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar('aval2')">
+
+<div class="pagina">
+<h1>ARK Survival Evolved</h1>
+
+<p>ARK: Survival Evolved é um jogo de sobrevivência sandbox onde jogadores acordam nus em uma ilha repleta de dinossauros e perigos. O objetivo é coletar recursos, construir bases, domar criaturas e evoluir de ferramentas de pedra para tecnologia futurista (TEK) para enfrentar chefes e desvendar o mistério da sua localização.</p>
+
+<div class="galeria">
+<img src="https://store-images.s-microsoft.com/image/apps.34402.14545480955348978.6df932ed-6670-40c9-9a84-fc164557d4ec.635b23a8-4ec7-44bd-b0ba-bc07c9b9ebb6" onclick="abrirImagem(this.src)">
+<img src="https://image.api.playstation.com/vulcan/ap/rnd/202503/2823/4fa49a2f980f15c140b66c7a835497476329bb58c43e62fc.jpg" onclick="abrirImagem(this.src)">
+<img src="https://survivetheark.com/uploads/monthly_2015_12/1446666762_ARK_Giganotosaurus.jpg.27ff53b29fef64eeb16b4d2d8f9e7022.jpg" onclick="abrirImagem(this.src)">
+</div>
+
+<div id="aval1" class="avaliacao">
+<span onclick="avaliar('aval2',1)">★</span>
+<span onclick="avaliar('aval2',2)">★</span>
+<span onclick="avaliar('aval2',3)">★</span>
+<span onclick="avaliar('aval2',4)">★</span>
+<span onclick="avaliar('aval2',5)">★</span>
+</div>
+
+<a class="botao" href="index.html">Voltar</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="fecharImagem()">
+  <span class="fechar">&times;</span>
+  <img id="img-lightbox">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+==========================================================================================================================
+cs2.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar('aval3')">
+
+<div class="pagina">
+<h1>Counter Strike 2</h1>
+
+<p>FPS competitivo baseado em estratégia e trabalho em equipe. O Counter-Strike 2 (CS2) é a atualização gratuita do CS:GO lançada pela Valve em 2023, construída na engine Source 2. Principais mudanças incluem servidores "sub-tick" para resposta mais rápida, fumaças volumétricas dinâmicas, gráficos aprimorados, mapas remodelados e a unificação do inventário..</p>
+
+<div class="galeria">
+<img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1749053861" onclick="abrirImagem(this.src)">
+<img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/counter-strike-2/7/77/Cs2-beginner-tips.jpg" onclick="abrirImagem(this.src)">
+<img src="https://lukao.tv/wp-content/uploads/2025/02/CSGO-O-mercado-de-skins-do-Counter-Strike-e-a-sua-relevancia-no-cenario.png" onclick="abrirImagem(this.src)">
+</div>
+
+<div id="aval1" class="avaliacao">
+<span onclick="avaliar('aval3',1)">★</span>
+<span onclick="avaliar('aval3',2)">★</span>
+<span onclick="avaliar('aval3',3)">★</span>
+<span onclick="avaliar('aval3',4)">★</span>
+<span onclick="avaliar('aval3',5)">★</span>
+</div>
+
+<a class="botao" href="index.html">Voltar</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="fecharImagem()">
+  <span class="fechar">&times;</span>
+  <img id="img-lightbox">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+============================================================================================
+gow.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>God of War</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar('aval4')">
+
+<div class="pagina">
+<h1>God of War (2018)</h1>
+
+<p>Kratos, agora na mitologia nórdica, tentando deixar seu passado violento para trás. Após a morte de sua esposa Faye, ele e seu filho, Atreus, viajam para espalhar suas cinzas no pico mais alto dos nove reinos, enfrentando deuses nórdicos como Baldur e amadurecendo sua relação pai e filho.</p>
+
+<div class="galeria">
+<img src="https://bocadoinferno.com.br/wp-content/uploads/2018/06/God-of-War-2018-2.jpg" onclick="abrirImagem(this.src)">
+<img src="https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/1/35023/files/2019/04/image-s2gihb.png" onclick="abrirImagem(this.src)">
+<img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2217/KAmUQWQ5V9QF3XDzmty1VkKj.png" onclick="abrirImagem(this.src)">
+</div>
+
+<div id="aval1" class="avaliacao">
+<span onclick="avaliar('aval4',1)">★</span>
+<span onclick="avaliar('aval4',2)">★</span>
+<span onclick="avaliar('aval4',3)">★</span>
+<span onclick="avaliar('aval4',4)">★</span>
+<span onclick="avaliar('aval4',5)">★</span>
+</div>
+
+<a class="botao" href="index.html">Voltar</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="fecharImagem()">
+  <span class="fechar">&times;</span>
+  <img id="img-lightbox">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+======================================================================================================================
+rocket.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rocket League</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar('aval5')">
+
+<div class="pagina">
+<h1>Rocket League</h1>
+
+<p>Rocket League é um jogo competitivo de "futebol com carros" desenvolvido pela Psyonix, onde equipes (geralmente 1v1 a 4v4) usam veículos impulsionados por foguetes para marcar gols. Misturando física realista, alta velocidade e personalização, o jogo é focado em partidas rápidas e intensas, disponível gratuitamente na Epic Games Store.</p>
+
+<div class="galeria">
+<img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/2x1_NSwitchDS_RocketLeague_S16_image1600w.jpg" onclick="abrirImagem(this.src)">
+<img src="https://cdn-62cb22a2c1ac1835ecef9f37.closte.com/wp-content/uploads/2020/09/egs-social-rocketleague-news-1920x1080-1920x1080-975383433-1024x576.jpg" onclick="abrirImagem(this.src)">
+<img src="https://s2-ge.glbimg.com/Il4YQL6ehUBvSmJ-dVTGKeIvf00=/0x0:2560x1440/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/z/a/4GaP1nR9A0AL2HvjhlnA/rocket-league-1-.jpg" onclick="abrirImagem(this.src)">
+</div>
+
+<div id="aval1" class="avaliacao">
+<span onclick="avaliar('aval5',1)">★</span>
+<span onclick="avaliar('aval5',2)">★</span>
+<span onclick="avaliar('aval5',3)">★</span>
+<span onclick="avaliar('aval5',4)">★</span>
+<span onclick="avaliar('aval5',5)">★</span>
+</div>
+
+<a class="botao" href="index.html">Voltar</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="fecharImagem()">
+  <span class="fechar">&times;</span>
+  <img id="img-lightbox">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+===================================================================================================================================
+elden.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Elden Ring</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar('aval6')">
+
+<div class="pagina">
+<h1>Elden Ring</h1>
+
+<p>Elden Ring é um RPG de ação em mundo aberto onde o jogador controla um Maculado (Tarnished) nas Terras Intermédias. Após a destruição do Elden Ring e a dispersão de seus fragmentos (Grandes Runas) pelos semideuses, o mundo caiu em guerra e decadência. A missão é derrotar os portadores das runas, restaurar o artefato e tornar-se o Elden Lord.</p>
+
+<div class="galeria">
+<img src="https://sm.ign.com/ign_br/screenshot/default/1_gnrw.jpg" onclick="abrirImagem(this.src)">
+<img src="https://cdn.shortpixel.ai/spai/q_glossy+ret_img+to_auto/www.slantmagazine.com/wp-content/uploads/2022/05/eldenring.jpg" onclick="abrirImagem(this.src)">
+<img src="https://substackcdn.com/image/fetch/$s_!kfzv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F164d2f62-6e5e-4e46-905e-4ee8f392c057_3840x2160.jpeg" onclick="abrirImagem(this.src)">
+</div>
+
+<div id="aval1" class="avaliacao">
+<span onclick="avaliar('aval6',1)">★</span>
+<span onclick="avaliar('aval6',2)">★</span>
+<span onclick="avaliar('aval6',3)">★</span>
+<span onclick="avaliar('aval6',4)">★</span>
+<span onclick="avaliar('aval6',5)">★</span>
+</div>
+
+<a class="botao" href="index.html">Voltar</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="fecharImagem()">
+  <span class="fechar">&times;</span>
+  <img id="img-lightbox">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
