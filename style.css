@@ -131,13 +131,13 @@ body {
 }
 
 .galeria img {
-  width: 200px;
+  width: 250px;
   border-radius: 8px;
   transition: 0.3s;
 }
 
 .galeria img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 /* LIGHTBOX (imagem grande) */
 .lightbox {
